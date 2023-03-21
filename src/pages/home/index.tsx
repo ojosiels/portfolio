@@ -12,7 +12,7 @@ import { Contacts } from "@/components/Contacts";
 import { stackData } from "@/utils/stackData";
 import { userData } from "@/utils/userData";
 
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaDownload } from "react-icons/fa";
 
 // Page Style
 import {
@@ -29,7 +29,7 @@ import {
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+  const resumeUrl = `https://docs.google.com/document/d/15J67mRt3jFlrcInanUW6p2mUOsQQsyYav7k9LbZLJ9c/edit?usp=sharing`;
 
   return (
     <main id="home">
@@ -65,9 +65,12 @@ export const Home = (): JSX.Element => {
               <Button as="a" type="primary" href="#projects">
                 See Projects
               </Button>
-              <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+
+              <Button as="a" type="outline" target="_blank" href={resumeUrl}>
+                <span style={{ paddingRight: "10px" }}>Download Resume</span>
+                <FaDownload />
               </Button>
+
               <Button
                 color="grey5"
                 as="a"
