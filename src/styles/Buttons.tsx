@@ -29,8 +29,9 @@ export const Button = styled("button", {
       primary: {
         background: "$brand1",
         borderColor: "$brand1",
-        color: "$whiteFixed",
+        color: "$grey0",
         "&:hover": {
+          color: "$whiteFixed",
           backgroundColor: "$brand2",
           borderColor: "$brand2",
         },
@@ -123,16 +124,6 @@ export const Button = styled("button", {
             color: "$socialInstagram",
           },
         },
-        ["&.facebook"]: {
-          backgroundColor: "$socialFacebook",
-          borderColor: "$socialFacebook",
-          color: "$whiteFixed",
-          "&:hover": {
-            backgroundColor: "transparent",
-            borderColor: "$socialFacebook",
-            color: "$socialFacebook",
-          },
-        },
         ["&.linkedin"]: {
           backgroundColor: "$socialLinkedin",
           borderColor: "$socialLinkedin",
@@ -141,6 +132,16 @@ export const Button = styled("button", {
             backgroundColor: "transparent",
             borderColor: "$socialLinkedin",
             color: "$socialLinkedin",
+          },
+        },
+        ["&.github"]: {
+          backgroundColor: "$socialGithub",
+          borderColor: "$socialGithub",
+          color: "$grey0",
+          "&:hover": {
+            backgroundColor: "transparent",
+            borderColor: "$socialGithub",
+            color: "$socialGithub",
           },
         },
         "&:hover": {

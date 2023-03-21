@@ -3,7 +3,7 @@ import { Text } from "@/styles/Text";
 import { Footer as FooterWrapper } from "./style";
 import { UserImage } from "@/pages/home/style";
 import { userData } from "@/utils/userData";
-import { FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 import { Button } from "@/styles/Buttons";
 // import { HandEffect } from "../HandEffect";
 
@@ -36,23 +36,15 @@ export const Footer = (): JSX.Element => {
           }}
         >
           <Button
-            className="instagram"
+            className="github"
             type="circle"
             as="a"
             target="_blank"
-            href={`https://instagram.com/${userData.instagramUser}`}
+            href={`https://linkedin.com/in/${userData.githubUser}`}
           >
-            <FaInstagram />
+            <FaGithub />
           </Button>
-          <Button
-            className="facebook"
-            type="circle"
-            as="a"
-            target="_blank"
-            href={`https://fb.com/${userData.facebookUser}`}
-          >
-            <FaFacebookF />
-          </Button>
+
           <Button
             className="linkedin"
             type="circle"
@@ -61,6 +53,16 @@ export const Footer = (): JSX.Element => {
             href={`https://linkedin.com/in/${userData.linkedinUser}`}
           >
             <FaLinkedinIn />
+          </Button>
+
+          <Button
+            className="instagram"
+            type="circle"
+            as="a"
+            target="_blank"
+            href={`https://instagram.com/${userData.instagramUser}`}
+          >
+            <FaInstagram />
           </Button>
         </Flex>
       </Container>
